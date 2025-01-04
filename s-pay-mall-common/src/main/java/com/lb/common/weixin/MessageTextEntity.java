@@ -1,9 +1,10 @@
-package com.lb.common;
+package com.lb.common.weixin;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 @XStreamAlias("xml")
 public class MessageTextEntity {
+
 
     @XStreamAlias("ToUserName")
     private String toUserName;
@@ -23,8 +24,8 @@ public class MessageTextEntity {
     @XStreamAlias("EventKey")
     private String eventKey;
 
-    @XStreamAlias("MsgId")
-    private String msgId;
+    @XStreamAlias("MsgID")
+    private String MsgId;
 
     @XStreamAlias("Status")
     private String status;
@@ -77,11 +78,11 @@ public class MessageTextEntity {
     }
 
     public String getMsgId() {
-        return msgId;
+        return MsgId;
     }
 
     public void setMsgId(String msgId) {
-        this.msgId = msgId;
+        this.MsgId = msgId;
     }
 
     public String getStatus() {
@@ -115,4 +116,5 @@ public class MessageTextEntity {
     public void setContent(String content) {
         this.content = content;
     }
+
 }
