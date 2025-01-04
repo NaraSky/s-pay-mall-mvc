@@ -3,3 +3,4 @@ spring:
     name: s-pay-mall-mvc
   profiles:
     active: dev
+
