@@ -1,6 +1,6 @@
 package com.lb.service.weixin;
 
-import com.lb.domain.po.WeixinTemplateMessageVO;
+import com.lb.domain.vo.WeixinTemplateMessageVO;
 import com.lb.domain.req.WeixinQrCodeReq;
 import com.lb.domain.res.WeixinQrCodeRes;
 import com.lb.domain.res.WeixinTokenRes;
@@ -14,6 +14,7 @@ import retrofit2.http.Query;
  * 微信公众号 API 服务
  */
 public interface IWeixinApiService {
+
 
     /**
      * 获取 Access token
@@ -51,5 +52,6 @@ public interface IWeixinApiService {
      */
     @POST("cgi-bin/message/template/send")
     Call<Void> sendMessage(@Query("access_token") String accessToken, @Body WeixinTemplateMessageVO weixinTemplateMessageVO);
+
 
 }

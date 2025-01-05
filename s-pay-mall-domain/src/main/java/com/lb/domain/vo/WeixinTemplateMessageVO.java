@@ -1,4 +1,4 @@
-package com.lb.domain.po;
+package com.lb.domain.vo;
 
 import java.util.HashMap;
 import java.util.Map;
